@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapper{
+    max-width: 850px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    margin: 10px auto;
+    box-shadow: 0 8px 20px 0px #1f1f1f1a;
+   padding: 20px 10px 20px 10px;
+   
+  
+   
+}
+
+.wrapper .form-left{
+    padding: 0px 10px 0px 20px;
+    position: relative;
+     
+}
+.wrapper .form-right{
+    padding: 0px 0px 5px 20px;
+    position: relative;
+    
+    
+}
+
+.wrapper .form-right label{
+    font-weight: 600;
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    
+    
+    
+    
+}
+
+.wrapper .form-right .input-field{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    color: rgb(49, 49, 49);
+}
+
+
+.wrapper .contact{
+    padding: 7px;
+    background: #dfb632;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    border: none;
+    margin: 0px 0 0px 0px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.wrapper .contact:hover{
+    background-color: #685608e0;
+}
+
+.wrapper .text{
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 380px;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+}
+
+
+@media (max-width: 860.5px) {
+    .wrapper{
+        margin: 50px 5px;
+    }
+}
+
+
+@media (max-width: 767.5px){
+    .wrapper{
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+
+    .wrapper .form-left{
+        border-bottom-left-radius: 0px;
+    }
+
+    
+}
+
+@media (max-width: 575px) {
+
+    .wrapper{
+        margin: 30px 15px;
+    }
+
+    .wrapper .form-left{
+        padding: 25px;
+    }
+    .wrapper .form-right{
+        padding: 25px;
+    }
+}
+    </style>
+
+
+</head>
+<body>
+    
+    <h2 style="text-align: center; margin-top: 30px;">Contact Us</h2>
+
+    <div class="wrapper">
+        
+        <div class="form-left">
+           <img src="contact.jpg" alt="">
+            
+        </div>
+            <form class="form-right">
+             
+                <div class="row">
+                <div class="col-sm-6 mb-3">
+                    <label>Name:</label>
+                    <input type="text" name="name" id="name" class="input-field" placeholder="Enter Your Name" required>
+                </div>
+              
+            
+                <div class="mb-3">
+                    <label>E-mail:</label>
+                    <input type="email" class="input-field" name="email" placeholder="Enter Your email" required> 
+                </div>
+
+                <div class="mb-3">               
+                <label>Massage:</label>
+                    <textarea  class="text" type="massage" id="massage" name="massage" placeholder="Enter Your massage"></textarea>
+
+                </div>
+                <div class="form-field">
+                <input  type="submit" value="Submit" class="contact" name="register">
+                </div>
+            </form>
+          
+        </div> 
+    </div>
+  
+</body>
+</html>
